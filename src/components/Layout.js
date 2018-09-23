@@ -1,10 +1,10 @@
 /* eslint no-unused-expressions:0 */
 
-import React from 'react';
-import PropTypes from 'prop-types';
-import { StaticQuery, graphql } from 'gatsby';
-import styled, { ThemeProvider, injectGlobal } from 'styled-components';
 import { SEO } from 'components';
+import { graphql, StaticQuery } from 'gatsby';
+import PropTypes from 'prop-types';
+import React from 'react';
+import styled, { injectGlobal, ThemeProvider } from 'styled-components';
 import theme from '../../config/Theme';
 import { media } from '../utils/media';
 
@@ -83,7 +83,7 @@ const Layout = ({ children }) => (
           {children}
           <Footer>
             &copy; 2018 by John Doe. All rights reserved. <br />
-            <a href="https://github.com/LeKoArts/gatsby-starter-minimal-blog">GitHub Repository</a> <br />
+            <a href="https://github.com/ahmadawais/gatsby-minimal-blog">GitHub Repository</a> <br />
             <span>Last build: {data.site.buildTime}</span>
           </Footer>
         </React.Fragment>
